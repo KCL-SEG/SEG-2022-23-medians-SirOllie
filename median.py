@@ -10,3 +10,8 @@ while True:
     else:
         break
 print(numbers)
+numberslength = int(len(numbers))
+if numberslength % 2 == 1: #checks if the length of numbers is odd
+    print(numbers[int((numberslength/2)-0.5)])
+else:
+    print((numbers[int((numberslength/2)-1)]+numbers[int(numberslength/2)])/2)
